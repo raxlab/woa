@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Mixed Integer Programming Workshop 2024</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/colors.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+
+  <style>  
+    .topnav {
+      overflow: hidden;
+      background-color: var(--navbar);
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: var(--navbarselect);
+      color: var(--navbarselecttext);
+    }
+    
+    .topnav a.active {
+      background-color: var(--navbarselect);
+      color: var(--navbarselecttext);
+    }
+  </style>
+
+  <style>
+    .highlight {
+	background-color: var(--highlight);
+	color: var(--highlightext);
+    }
+
+    .highlight a {
+	color: var(--highlightlink);
+    }
+  </style>
+
+  <style>
+    .mainstyle1 {
+	background-color: var(--maincolor1);
+	color: var(--maincolor1text);
+    }
+
+    .mainstyle1 a {
+	color: var(--maincolor1link);
+    }
+  </style>
+  
+  <style>
+    .mainstyle2 {
+	background-color: var(--maincolor2);
+	color: var(--maincolor2text);
+    }
+
+    .mainstyle2 a {
+	color: var(--maincolor2link);
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="firstrow">
+    <div class="container">
+      <div class="row">
+        <div class="six columns"><img src="images/mip-logo24.png" alt="MIP 2024 Logo" width="100%"></div>
+        <div class="six columns">
+          <h1>Mixed Integer Programming Workshop 2024</h1>
+          <p class="date">June 2, 2024 (summer school)</p>
+          <p class="date">June 3-6, 2024 (regular workshop)</p>
+          <p class="place">University of Kentucky</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color:var(--navbar);color:var(--navbartext)">
+    <div class="container">
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="registration.html">Registration</a>
+        <a href="posters.html">Posters</a>
+        <a class="active" href="summerschool.html">Summer School</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="local.html">Local Information</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <div class="container">
+      <h2>Summer School</h2>
+      <div class="row">
+        <div>
+          <p>The 2024 edition of the MIP workshop hosts a summer school on cutting planes.
+	    The summer school takes place at <b>Room 121 of Don and Cathy Jacobs Science Building</b> of the University of Kentucky on <b>Sunday June 2, 2024</b>.
+	  </p>
+
+	  <p>
+	    Attendees of the summer school are <b>required to <a href="registration.html">register</a></b> for the MIP workshop.
+	    There will be no additional fees for the summer school though.
+	  </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle2">
+    <div class="container">
+      <h2>Tentative Program</h2>
+      <div class="row">
+	<div class="twelve columns">
+          <table>
+            <tr>
+	      <td class="time">
+		9:00 - 10:00
+	      </td>
+	      <td>
+		<p>
+		  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+		    Santanu S. Dey – A general overview on cutting planes
+		  </a>
+		</p>
+		<p class="hideme">
+		  Cutting-planes are an integral part of the modern integer programming solvers.
+		  We will present a brief introduction to cutting-plane theory.
+		  We begin by discussing various paradigms of cutting-plane generation:
+		  geometric cutting-planes, structured relaxations-based cutting-planes, subadditive
+		  cutting-planes, and cutting-planes via extended formulations and algebraic
+		  properties. The presentation will emphasize how these seemingly different
+		  cutting-planes generation paradigms are related to each other, and how these
+		  techniques may be generalized to the mixed-integer nonlinear setting. Finally,
+		  we will discuss the question of cutting-plane selection and challenges related to
+		  this.
+		  <a href="slides/Santanu_Dey.pdf">(slides)</a>
+		</p>
+	      </td>
+	    </tr>
+            <tr>
+	      <td class="time">
+		10:00 - 10:20
+	      </td>
+	      <td>
+		Coffee Break
+	      </td>
+	    </tr>
+            <tr>
+	      <td class="time">
+		10:20 - 11:05
+	      </td>
+	      <td>
+		<p>
+		  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+		    Santanu S. Dey – A general overview on cutting planes
+		  </a>
+		</p>
+		<p class="hideme">
+		  Cutting-planes are an integral part of the modern integer programming solvers.
+		  We will present a brief introduction to cutting-plane theory.
+		  We begin by discussing various paradigms of cutting-plane generation:
+		  geometric cutting-planes, structured relaxations-based cutting-planes, subadditive
+		  cutting-planes, and cutting-planes via extended formulations and algebraic
+		  properties. The presentation will emphasize how these seemingly different
+		  cutting-planes generation paradigms are related to each other, and how these
+		  techniques may be generalized to the mixed-integer nonlinear setting. Finally,
+		  we will discuss the question of cutting-plane selection and challenges related to
+		  this.
+		  <a href="slides/Santanu_Dey.pdf">(slides)</a>
+		</p>
+	      </td>
+	    </tr>
+            <tr>
+	      <td class="time">
+		11:05 - 11:15
+	      </td>
+	      <td>
+		Break
+	      </td>
+	    </tr>
+            <tr>
+	      <td class="time">
+		11:15 - 12:00
+	      </td>
+	      <td>
+		<p>
+		  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+		    Santanu S. Dey – A general overview on cutting planes
+		  </a>
+		</p>
+		<p class="hideme">
+		  Cutting-planes are an integral part of the modern integer programming solvers.
+		  We will present a brief introduction to cutting-plane theory.
+		  We begin by discussing various paradigms of cutting-plane generation:
+		  geometric cutting-planes, structured relaxations-based cutting-planes, subadditive
+		  cutting-planes, and cutting-planes via extended formulations and algebraic
+		  properties. The presentation will emphasize how these seemingly different
+		  cutting-planes generation paradigms are related to each other, and how these
+		  techniques may be generalized to the mixed-integer nonlinear setting. Finally,
+		  we will discuss the question of cutting-plane selection and challenges related to
+		  this.
+		  <a href="slides/Santanu_Dey.pdf">(slides)</a>
+		</p>
+	      </td>
+	    </tr>
+            <tr>
+	      <td class="time">
+		12:00 - 1:45
+	      </td>
+	      <td>
+		Lunch
+	      </td>
+	    </tr>
+            <tr>
+	      <td class="time">
+		1:45 - 2:45
+	      </td>
+	      <td>
+		<p>
+		  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+		    Jean-Philippe (JP) Richard - Cutting Planes for MINLP
+		  </a>
+		</p>
+		<p class="hideme">
+		  Leveraging problem structure has emerged as a useful strategy for
+		  generating strong cutting planes in integer programming. The expressive nature
+		  of nonlinear functions greatly expands the range of structured sets that can be
+		  explored in mixed-integer nonlinear programming. This presentation highlights
+		  the pivotal role of multilinear functions, which invariably appear when relaxing
+		  factorable nonlinear programs, i.e., problems characterized by constraints
+		  and objectives derived through recursive compositions of sums and products
+		  of intermediate functions, originating from a set of base univariate functions.
+		  Beginning with foundational concepts surrounding the Boolean quadric polytope,
+		  we explore how polyhedral partitions, lifting, and disjunctive approaches,
+		  among others, can be employed to gain insights and derive cutting planes for
+		  these structures.
+		</p>
+	      </td>
+	    </tr>
+            <tr>
+	      <td class="time">
+		2:45 - 3:05
+	      </td>
+	      <td>
+		Coffee Break
+	      </td>
+	    </tr>
+            <tr>
+	      <td class="time">3:05 - 4:05
+	      </td>
+	      <td>
+		<p>
+		  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+		    Jean-Philippe (JP) Richard - Cutting Planes for MINLP
+		  </a>
+		</p>
+		<p class="hideme">
+		  Leveraging problem structure has emerged as a useful strategy for
+		  generating strong cutting planes in integer programming. The expressive nature
+		  of nonlinear functions greatly expands the range of structured sets that can be
+		  explored in mixed-integer nonlinear programming. This presentation highlights
+		  the pivotal role of multilinear functions, which invariably appear when relaxing
+		  factorable nonlinear programs, i.e., problems characterized by constraints
+		  and objectives derived through recursive compositions of sums and products
+		  of intermediate functions, originating from a set of base univariate functions.
+		  Beginning with foundational concepts surrounding the Boolean quadric polytope,
+		  we explore how polyhedral partitions, lifting, and disjunctive approaches,
+		  among others, can be employed to gain insights and derive cutting planes for
+		  these structures.
+		</p>
+	      </td>
+	    </tr>
+            <tr>
+	      <td class="time">
+		4:05 - 4:15
+	      </td>
+	      <td>
+		Break
+	      </td>
+	    </tr>
+            <tr>
+	      <td class="time">4:15 - 5:00
+	      </td>
+	      <td>
+		<p>
+		  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+		    Jean-Philippe (JP) Richard - Cutting Planes for MINLP
+		  </a>
+		</p>
+		<p class="hideme">
+		  Leveraging problem structure has emerged as a useful strategy for
+		  generating strong cutting planes in integer programming. The expressive nature
+		  of nonlinear functions greatly expands the range of structured sets that can be
+		  explored in mixed-integer nonlinear programming. This presentation highlights
+		  the pivotal role of multilinear functions, which invariably appear when relaxing
+		  factorable nonlinear programs, i.e., problems characterized by constraints
+		  and objectives derived through recursive compositions of sums and products
+		  of intermediate functions, originating from a set of base univariate functions.
+		  Beginning with foundational concepts surrounding the Boolean quadric polytope,
+		  we explore how polyhedral partitions, lifting, and disjunctive approaches,
+		  among others, can be employed to gain insights and derive cutting planes for
+		  these structures.
+		</p>
+	      </td>
+	    </tr>
+          </table>
+	</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle1">
+    <div class="container">
+      <h2>Credits</h2>
+      <p>Logo-Design by ©<a href="https://www.jubs-art.com">Julia Silbermann</a> (Font-Credits: Cornerstone, by Zac Freeland).
+      Website hosted at <a href="https://pages.github.com">GitHub Pages</a>, layout based on <a href="http://getskeleton.com">skeleton</a> using <a href="https://github.com/impallari/Raleway">Raleway</a> font</p>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+    function toggleSchedule(el) {
+      el.parentElement.nextElementSibling.classList.toggle("hideme");
+    }
+
+    function toggleAbstract(el) {
+      el.parentElement.nextElementSibling.classList.toggle("hideme");
+    }
+  </script>
+</body>
+</html>

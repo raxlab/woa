@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Mixed Integer Programming Workshop 2024</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/colors.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+
+  <style>  
+    .topnav {
+      overflow: hidden;
+      background-color: var(--navbar);
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: var(--navbarselect);
+      color: var(--navbarselecttext);
+    }
+    
+    .topnav a.active {
+      background-color: var(--navbarselect);
+      color: var(--navbarselecttext);
+    }
+  </style>
+
+  <style>
+    .highlight {
+	background-color: var(--highlight);
+	color: var(--highlightext);
+    }
+
+    .highlight a {
+	color: var(--highlightlink);
+    }
+  </style>
+
+  <style>
+    .mainstyle1 {
+	background-color: var(--maincolor1);
+	color: var(--maincolor1text);
+    }
+
+    .mainstyle1 a {
+	color: var(--maincolor1link);
+    }
+  </style>
+  
+  <style>
+    .mainstyle2 {
+	background-color: var(--maincolor2);
+	color: var(--maincolor2text);
+    }
+
+    .mainstyle2 a {
+	color: var(--maincolor2link);
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="firstrow">
+    <div class="container">
+      <div class="row">
+        <div class="six columns"><img src="images/mip-logo24.png" alt="MIP 2024 Logo" width="100%"></div>
+        <div class="six columns">
+          <h1>Mixed Integer Programming Workshop 2024</h1>
+          <p class="date">June 2, 2024 (summer school)</p>
+          <p class="date">June 3-6, 2024 (regular workshop)</p>
+          <p class="place">University of Kentucky</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color:var(--navbar);color:var(--navbartext)">
+    <div class="container">
+      <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="registration.html">Registration</a>
+        <a href="posters.html">Posters</a>
+        <a href="summerschool.html">Summer School</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="local.html">Local Information</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <div class="container">
+      <h2>About</h2>
+      <div class="row">
+        <div>
+          <p>The Mixed Integer Programming (MIP) Workshop is a single-track workshop highlighting the latest trends in integer programming and discrete optimization, with speakers chosen by invitation.</p>
+          <p>The 2024 edition of the workshop will be the <strong>twenty-first</strong> in the MIP series. Links to past editions can be found <a href="https://mixedinteger.org/">here</a>.
+	    MIP2024 is supported by the <a href="https://www.mixedinteger.org/">Mixed Integer Programming Society (MIPS)</a>, which is a section of the <a href="http://www.mathopt.org/">Mathematical Optimization Society (MOS)</a>.</p>
+
+	  <p>The MIP2024 organizing committee, the local organizing committee, and the Office of Inclusive Excellence at the University of Kentucky are committed to making the workshop a welcoming environment for all members of the MIP community.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle1">
+    <div class="container">
+      <h2>Confirmed Speakers</h2>
+      <p>
+	<a title="Confirmed Speakers" href="#" onclick="toggleSchedule(this);return false;">Click here to toggle list of speakers.</a>
+      </p>
+      <div class="hideme">
+	<div class="row">
+  	  <div class="twelve columns">
+  	    <p>
+  	      <a href="https://u.osu.edu/bayraksan.1/">
+  		Güzin Bayraksan
+  	      </a>
+  	      (Ohio State University)
+  	    </p>
+  	    <p>
+  	      <a href="https://matbesancon.xyz/">
+  		Mathieu Besançon
+  	      </a>
+  	      (Zuse Institute Berlin / Inria Grenoble)
+  	    </p>
+  	    <p>
+  	      <a href="https://mervebodur.github.io/">
+  		Merve Bodur
+  	      </a>
+  	      (University of Edinburgh)
+  	    </p>
+  	    <p>
+  	      <a href="https://docenti.unisa.it/064642/home">
+  		Martina Cerulli
+  	      </a>
+  	      (University of Salerno)
+  	    </p>
+  	    <p>
+  	      <a href="https://sites.google.com/view/rchen/home">
+  		Rui Chen
+  	      </a>
+  	      (Cornell Tech)
+  	    </p>
+  	    <p>
+  	      <a href="https://www.hec.ca/en/profs/maryam.daryalal.html">
+  		Maryam Daryalal
+  	      </a>
+  	      (HEC Montréal)
+  	    </p>
+  	    <p>
+  	      <a href="https://sites.google.com/view/danialdavarnia">
+  		Danial Davarnia
+  	      </a>
+  	      (Iowa State University)
+  	    </p>
+  	    <p>
+  	      <a href="https://sites.google.com/view/yatharthdubey/">
+  		Yatharth Dubey
+  	      </a>
+  	      (University of Illinois of Urbana-Champaign)
+  	    </p>
+  	    <p>
+  	      <a href="https://www.zib.de/gamrath/">
+  		Gerald Gamrath
+  	      </a>
+  	      (COPT Cardinal Operations)
+  	    </p>
+  	    <p>
+  	      <a href="https://www.nrel.gov/research/staff/bernard-knueven.html">
+  		Bernard Knueven
+  	      </a>
+  	      (National Renewable Energy Lab)
+  	    </p>
+  	    <p>
+  	      <a href="https://directory.engr.wisc.edu/ie/Faculty/Michini_Carla/">
+  		Carla Michini
+  	      </a>
+  	      (University of Wisconsin-Madison)
+  	    </p>
+  	    <p>
+  	      <a href="https://www.cbs.dk/en/research/departments-and-centres/department-of-economics/staff/drmeco">
+  		Dolores Romero Morales
+  	      </a>
+  	      (Copenhagen Business School)
+  	    </p>
+  	    <p>
+  	      <a href="https://bentonatura.com/">
+  		Bento Natura
+  	      </a>
+  	      (UC Berkeley & Georgia Tech)
+  	    </p>
+  	    <p>
+  	      <a href="https://profiles.rice.edu/faculty/sebastian-perez-salazar">
+  		Sebastian Perez-Salazar
+  	      </a>
+  	      (Rice University)
+  	    </p>
+  	    <p>
+  	      <a href="https://jeffposkin.github.io/">
+  		Jeff Poskin
+  	      </a>
+  	      (Boeing Research & Technology)
+  	    </p>
+  	    <p>
+  	      <a href="https://coral.ise.lehigh.edu/~ted/">
+  		Ted Ralphs
+  	      </a>
+  	      (Lehigh University)
+  	    </p>
+  	    <p>
+  	      <a href="https://sorooshafiee.github.io/">
+  		Soroosh Shafieezadeh-Abadeh
+  	      </a>
+  	      (Cornell University)
+  	    </p>
+  	    <p>
+  	      <a href="https://mtanneau.github.io/">
+  		Mathieu Tanneau
+  	      </a>
+  	      (Georgia Tech)
+  	    </p>
+  	    <p>
+  	      <a href="https://juan-pablo-vielma.github.io/">
+  		Juan Pablo Vielma
+  	      </a>
+  	      (Google)
+  	    </p>
+  	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="mainstyle2">
+    <div class="container">
+      <h2>Program</h2>
+      <div class="row">
+        <div class="twelve columns">
+          <h3><a title="Show Monday schedule" href="#" onclick="toggleSchedule(this);return false;">Monday, June 3</a></h3>
+          <table class="hideme">
+	    <tr><td class="time">9:10 - 9:30</td><td><p>Welcome comments</p></td></tr>
+            <tr><td class="time">9:30 - 10:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Ted Ralphs – It's the Farkas Lemma All the Way Down: A Generalized Farkas Lemma and Its Implications</a>
+		</p>
+		<p class="hideme">
+		  We present a generalized version of the Farkas Lemma that provides a unifying framework for understanding the relationships between solution algorithms for discrete optimization.problems with multiple objectives, multiple decision-makers, and/or multiple stages. A well-known geometric interpretation of Farkas' certificate of infeasibility for a linear optimization problem is as a hyperplane separating a given right-hand side vector from a convex cone. This interpretation generalizes in a natural way to the MILP setting and provides a geometric way of understanding MILP duality and related concepts. This geometric point of view also provides insight into the algorithms for a variety of optimization problems, As a motivating example, we'll describe how this point of view led to development of a class of algorithms for constructing the efficient frontier of a general multiobjective mixed integer linear optimization optimization problem with an arbitrary number of objectives in a single branch-and-bound tree.
+		</p>
+	    </td></tr>
+            <tr><td class="time">10:20 - 10:45</td><td><p>Break</p></td></tr>
+            <tr><td class="time">10:45 - 11:20</td><td>
+	   	<p>
+	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Merve Bodur – Incorporating Service Reliability in Multi-depot Vehicle Scheduling: A Chance-Constrained Approach</a>
+	   	</p>
+	   	<p class="hideme">
+	   	  The multi-depot vehicle scheduling problem (MDVSP) is a principal
+		  planning challenge for transit agencies. We introduce a novel approach to MDVSP
+		  by incorporating service reliability through chance-constrained programming
+		  (CCP), targeting the pivotal issue of travel time uncertainty and its impact
+		  on transit service quality. We propose an exact branch-and-cut (B&C) scheme
+		  to solve our CCP model. We present several cut-generation procedures that
+		  exploit the underlying problem structure and analyze the relationship between
+		  the obtained cut families. Additionally, we design a Lagrangian-based heuristic
+		  to handle large-scale instances reflective of real-world transit operations. Our
+		  approach partitions the set of trips, each subset leading to a subproblem that
+		  can be efficiently solved with our B&C algorithm, and then employs a procedure
+		  to combine the subproblem solutions to create a vehicle schedule that
+		  satisfies all the planning constraints of the MDVSP. Our empirical evaluation
+		  demonstrates the superiority of our stochastic variant in achieving cost-effective
+		  schedules with reliable service guarantees compared to alternatives commonly
+		  used by practitioners, as well as the computational benefits of our methodologies.
+	   	</p>
+	    </td></tr>
+            <tr><td class="time">11:20 - 11:55</td><td>
+		<p>
+	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Martina Cerulli – A bilevel approach for compensation and routing decisions in last-mile delivery</a>
+	   	</p>
+	   	<p class="hideme">
+	   	  In last-mile delivery logistics, peer-to-peer logistic platforms play an
+		  important role in connecting senders, customers, and independent carriers to fulfill
+		  delivery requests. Since the carriers are not under the platform’s control,
+		  the platform has to anticipate their reactions, while deciding how to allocate
+		  the delivery operations. In this work, we model this problem using bilevel pro-
+		  gramming. At the upper level, the platform decides how to assign the orders to
+		  the carriers; at the lower level, each carrier solves a profitable tour problem to
+		  determine which offered requests to accept, based on her own profit maximiza-
+		  tion. Possibly, the platform can influence carriers’ decisions by determining also
+		  the compensation paid for each accepted request. The two considered settings
+		  result in two different formulations: the bilevel profitable tour problem with
+		  fixed compensation margins and with margin decisions, respectively. For each
+		  of them, we propose single-level reformulations and alternative formulations
+		  where the lower-level routing variables are projected out. A branch-and-cut
+		  algorithm is proposed to solve the bilevel models and extensive computational
+		  tests are performed to compare the proposed formulations and analyze solution
+		  characteristics.
+		  <a href="slides/Martina_Cerulli.pdf">(slides)</a>
+	   	</p>
+	    </td></tr>
+            <tr><td class="time">11:55 - 2:00</td><td><p>Lunch</p></td></tr>
+            <tr><td class="time">2:00 - 2:35</td><td>
+		<p>
+	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Jeff Poskin – Mixed Integer Optimization in Aerospace Engineering</a>
+		</p>
+		<p class="hideme">	   	  
+		  Mixed integer optimization (MIO) is leveraged regularly across aerospace engineering, addressing problems in the design, manufacturing, production, and in-service life of commercial aircraft. This presentation will start with a brief overview of how Boeing’s Applied Math Group applies MIO to problems at Boeing. This presentation will then focus on a mixed integer nonlinear programming (MINLP) formulation for stringer centerline design in a commercial vehicle.
+		  Fuselage stringers are load-bearing components that run lengthwise along an aircraft and transfer aerodynamic loads acting on the skin into the stringers and frames. The design of stringer centerlines in commercial airplanes has traditionally been performed manually by structural engineers since stringer configurations are subject to a wide variety of design and integration requirements. These requirements include minimum and maximum spacing between pairs of centerlines, maximum area constraints on frame bays, and a host of integration requirements with additional features in the fuselage. 
+		  The MINLP formulation uses discrete variables to assign stringers to drop out of the design at specific frame stations and continuous variables to control the path stringers take on the fuselage surface. We will efficiently enumerate this design space by checking the feasibility of several linear programs representing relaxations of the stringer spacing constraints. This enumeration is incorporated into a branch and bound algorithm that solves the centerline design problem to global optimality. This algorithm is compared to a piecewise linear modeling approach to solve the MINLP.
+		</p>
+	    </td></tr>
+            <tr><td class="time">2:35 - 3:10</td><td><p>Poster Teaser #1</p></td></tr>
+            <tr><td class="time">3:10 - 3:40</td><td><p>Break</p></td></tr>
+            <tr><td class="time">3:40 - 4:15</td><td><p>Poster Teaser #2</p></td></tr>
+            <tr><td class="time">4:15 - 4:50</td><td>
+	   	<p>
+	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Mathieu Tanneau – Trust, but verify: MIP-based verification of (trained) neural networks</a>
+	   	</p>
+	   	<p class="hideme">
+	   	  Recent advances in Machine Learning, and artificial neural networks (ANN) in particular, has fueled a growing interest in deploying such models in safety-critical applications, from image recognition in self-driving cars to control systems in power grids. A major obstacle to this deployment, however, is the lack of formal guarantees on the performance of trained ANNs once deployed in real life. This, in turn, has motivated the so-called ANN verification problem, wherein one must verify whether the output of a trained ANN satisfies certain properties for any input in a given domain. All exact verification methods rely, some way or another, on a mixed-integer representation of the mapping between input and output of a ANN with fixed weights. Nevertheless, existing MIP solvers struggle on this class of problems, and are far outperformed by current state-of-the-art methods for ANN verification (as demonstrated by recent outcomes of the Verification of Neural Networks Competition). This talk will cover the challenges (and recent successes!) of MIP-based verification of trained neural networks, with a particular focus on problems arising from engineering applications. Numerical results will be presented on open instances from the VNN-COMP24, and from real-life applications in power systems.
+	   	</p>
+	    </td></tr>
+            <tr><td class="time"></td><td><p></p></td></tr>
+            <tr><td class="time">5:30 - 8:00</td><td><p>Poster Session</p></td></tr>
+	  </table>
+	  
+          <h3><a title="Show Tuesday schedule" href="#" onclick="toggleSchedule(this);return false;">Tuesday, June 4</a></h3>
+          <table class="hideme">
+            <tr><td class="time">9:30 - 10:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Dolores Romero Morales – A tour of Mathematical Optimization Models for Group Counterfactual Explanations</a>
+		</p>
+		<p class="hideme">
+		  Counterfactual Analysis has shown to be a powerful tool in the burgeoning field of Explainable Artificial Intelligence. In Supervised Classification, this means associating with each record a so-called counterfactual explanation: an instance that is close to the record and whose probability of being classified in the opposite class by a given classifier is high. While the literature mostly focuses on the problem of finding one counterfactual for one record, in this presentation we take a stakeholder perspective, and we address the more general setting in which a group of counterfactual explanations is sought for a group of instances. We introduce some mathematical optimization models as illustration of each possible allocation rule between counterfactuals and instances, for tabular as well as functional data, and tasks beyond Supervised Classification.
+		  <a href="slides/Dolores_RomeroMorales.pdf">(slides)</a>
+		</p>
+	    </td></tr>
+            <tr><td class="time">10:20 - 10:45</td><td><p>Break</p></td></tr>
+            <tr><td class="time">10:45 - 11:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Carla Michini – A polyhedral study of multivariate decision trees</a>
+		</p>
+		<p class="hideme">
+		  Decision trees are a widely used tool for interpretable machine learning.
+		  Multivariate decision trees employ hyperplanes at the branch nodes to route
+		  datapoints throughout the tree and yield more compact models than univari-
+		  ate trees. Recently, mixed-integer programming (MIP) has been applied to
+		  formulate the optimal decision tree problem. A key component of most MIP
+		  formulations is a specification of how to route datapoints in the tree from the
+		  root to the leaves. Our goal is to provide polyhedral characterizations of realizable
+		  routings, i.e., routings that can be realized using multivariate branching
+		  rules. We first focus on shattering inequalities, a class of valid inequalities that
+		  can be used to strengthen almost any MIP formulation and that have been
+		  shown to be computationally effective. We prove that if all the feature vectors
+		  are in general position, then the shattering inequalities defined for the root of
+		  the tree are facet-defining for the convex hull of the realizable routings. We
+		  then show that every facet-defining inequality of a depth one tree involving at
+		  least two variables is also facet-defining for trees of arbitrary depth. Finally,
+		  we show that facet-defining inequalities characterizing realizable routings are
+		  also facet-defining for a complete MIP formulation. We validate our theoretical
+		  results by performing numerical experiments that specifically exploit shattering
+		  inequalities defined at the root node and we observe an improvement in performance
+		  for both numerical and categorical datasets, especially for decision trees
+		  of intermediate size. This a joint work with Zachary Zhou.
+		  <a href="slides/Carla_Michini.pdf">(slides)</a>
+		</p>
+	    </td></tr>
+            <tr><td class="time">11:20 - 11:55</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Sebastian Perez-Salazar – Stochastic Scheduling: Approximations via LP Relaxations</a>
+		</p>
+		<p class="hideme">
+		  Motivated by applications where impatience is pervasive, such as
+		  serving customers in call centers and running jobs in the cloud spot market,
+		  we introduce a sequential job scheduling problem, where each job has unknown
+		  stochastic service and departure times. Initially, we have access to a single server
+		  and n jobs with known non-negative values. These jobs also have unknown
+		  stochastic service and departure times with known distributional information,
+		  which we assume to be independent. When the server is free, we can run a job
+		  that has neither been run nor departed and collect its value. Running a job fully
+		  occupies the server for an unknown amount of time, at which other jobs waiting
+		  to be run could depart. We aim to design a policy that maximizes the expected
+		  total value obtained from jobs run on the server. Natural formulations of this
+		  problem (e.g., using dynamic programming) suffer from the curse of dimensionality,
+		  making them intractable. Hence, we focus on heuristic approaches that
+		  provide provable approximations of the optimal policy. We devise a compact
+		  LP with an objective that upper bounds the value of the optimal policy.
+		  Additionally, from this LP, we design an implementable policy that guarantees a
+		  constant approximation of the optimal policy.
+		</p>
+	    </td></tr>
+            <tr><td class="time">11:55 - 2:00</td><td><p>Lunch</p></td></tr>
+            <tr><td class="time">2:00 - 2:35</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Soroosh Shafieezadeh-Abadeh – Constrained Optimization of Low-Rank Functions with Indicator Variables</a>
+		</p>
+		<p class="hideme">
+		  Optimization problems involving minimization of a low-rank convex function over constraints modeling restrictions on the support of the decision variables emerge in various machine learning applications. These problems are often modeled with indicator variables for identifying the support of the continuous variables. In this paper we investigate compact extended formulations for such problems through perspective reformulation techniques. In contrast to the majority of previous work that relies on support function arguments and disjunctive programming techniques to provide convex hull results, we propose a constructive approach that exploits a hidden conic structure induced by perspective functions. To this end, we first establish a convex hull result for a general conic mixed-binary set in which each conic constraint involves a linear function of independent continuous variables and a set of binary variables. We then demonstrate that extended representations of sets associated with epigraphs of low-rank convex functions over constraints modeling indicator relations naturally admit such a conic representation. This enables us to systematically give perspective formulations for the convex hull descriptions of these sets with nonlinear separable or non-separable objective functions, sign constraints on continuous variables, and combinatorial constraints on indicator variables.
+		  <a href="slides/Soroosh_Shafiee.pdf">(slides)</a>
+		</p>
+	    </td></tr>
+            <tr><td class="time">2:35 - 3:10</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Danial Davarnia – Convexification of Bilinear Terms over Network Polytopes</a>
+		</p>
+		<p class="hideme">
+		  It is well-known that the McCormick relaxation for the bilinear constraint z = xy gives the convex hull over the box domains for x and y. In network applications where the domain of bilinear variables is described by a network polytope, the McCormick relaxation, also referred to as linearization, fails to provide the convex hull and often leads to poor dual bounds. We study the convex hull of the set containing bilinear constraints zi,j = xiyj where xi represents the arc-flow variable in a network polytope, and yj is in a simplex. For the case where the simplex contains a single y variable, we introduce a systematic procedure to obtain the convex hull of the above set in the original space of variables and show that all facet-defining inequalities of the convex hull can be obtained explicitly through identifying a special tree structure in the underlying network. For the generalization where the simplex contains multiple y variables, we design a constructive procedure to obtain an important class of facet-defining inequalities for the convex hull of the underlying bilinear set that is characterized by a special forest structure in the underlying network. Computational experiments conducted on different applications show the effectiveness of the proposed methods in improving the dual bounds obtained from alternative techniques.
+		  <a href="slides/Danial_Davarnia.pdf">(slides)</a>
+		</p>
+	    </td></tr>
+            <tr><td class="time">3:10 - 3:40</td><td><p>Break</p></td></tr>
+            <tr><td class="time">3:40 - 4:15</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Gerald Gamrath – New Presolving Techniques in the Cardinal Optimizer</a>
+		</p>
+		<p class="hideme">
+		  Presolving is an essential component of modern MIP solvers. It cleans up the model, identifies structures in the problem, and tightens the formulation before the branch-and-cut search starts. In this talk, we present new presolving techniques implemented in the Cardinal Optimizer (COPT). The discussed methods range from techniques based on specific structures like precedence graphs or symmetry relations to improvement of general techniques like probing. We address examples that caused our analysis of those structures and present the details of the new presolving reductions. For each reduction, we show computational results demonstrating its impact.
+		</p>
+	    </td></tr>
+            <tr><td class="time">4:15 - 4:50</td><td><p>Computational Competition</p></td></tr>
+            <tr><td class="time"></td><td><p></p></td></tr>
+            <tr><td class="time">6:00 - 10:00</td><td><p><a href="https://lockboxlex.com/">Conference Dinner</a></p></td></tr>
+	  </table>
+
+	  <h3><a title="Show Wednesday schedule" href="#" onclick="toggleSchedule(this);return false;">Wednesday, June 5</a></h3>
+          <table class="hideme">
+            <tr><td class="time">9:30 - 10:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Güzin Bayraksan – Bounds for Multistage Mixed-Integer Distributionally Robust Optimization</a>
+		</p>
+		<p class="hideme">
+		  Multistage mixed-integer distributionally robust optimization (DRO) forms a class of extremely challenging problems since their size grows exponentially with the number of stages. One way to model the uncertainty in multistage DRO is by creating sets of conditional distributions (the so-called conditional ambiguity sets) on a finite scenario tree and requiring that such distributions remain close to nominal conditional distributions according to some measure of similarity/distance. In this talk, new bounding criteria for this class of difficult decision problems are provided through scenario grouping and convolution of risk measures using the ambiguity sets associated with various commonly used φ-divergences and the Wasserstein distance. Our approach does not require any special problem structure such as linearity, convexity, stagewise independence, and so forth. Therefore, while we focus on multistage mixed-integer DRO, our bounds can be applied to a wide range of DRO problems including two-stage and multistage, with or without integer variables, convex or nonconvex, and nested or non-nested formulations. Numerical results on a multistage mixed-integer production problem show the efficiency of the proposed approach through different choices of partition strategies, ambiguity sets, and levels of robustness.
+		  <a href="slides/guzin_bayraksan.pdf">(slides)</a>
+		</p>
+	    </td></tr>
+            <tr><td class="time">10:20 - 10:45</td><td><p>Break</p></td></tr>
+            <tr><td class="time">10:45 - 11:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Bernard Knueven – Solving the Grid Optimization Competition Challenge 3 Problem</a>
+		</p>
+		<p class="hideme">
+		  The Grid Optimization Competition Challenge 3 Problem posed a multiperiod security-constrained unit commitment problem with base-case AC power flow. The problem formulation includes binary unit commitment decisions, nonlinear AC power flow and balance, dispatchable loads, and linearized contingency real power flow, among other features. This talk will present a modified consensus ADMM algorithm, which splits the problem into mixed-integer linear and nonlinear components, as a heuristic solution method for this large-scale mixed integer nonlinear program. We will present some computational results from the competition for our implementation and reflect on the challenges of participating the grid optimization competition.
+		  <a href="slides/Bernard_Knueven.pdf">(slides)</a>
+		</p>
+	    </td></tr>
+            <tr><td class="time">11:20 - 11:55</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Rui Chen – Recovering Dantzig-Wolfe Bounds by Cutting Planes</a>
+		</p>
+		<p class="hideme">
+		  Dantzig-Wolfe (DW) decomposition is a well-known technique in mixed-integer programming (MIP) for decomposing and convexifying constraints to obtain potentially strong dual bounds. We investigate cutting planes that can be derived in the space of original variables using DW decomposition and show that these cuts can provide the same dual bounds as DW decomposition. Compared with the objective function cut one can simply write using the DW bound, this approach typically leads to a formulation with lower dual degeneracy that consequently has a better computational performance when solved by standard MIP solvers in the original space. We also discuss how to strengthen these cuts to improve the computational performance further.
+		  <a href="slides/Rui_Chen.pdf">(slides)</a>
+		</p>
+	    </td></tr>
+            <tr><td class="time">11:55 - 2:00</td><td><p>Lunch</p></td></tr>
+            <tr><td class="time">2:00 - 2:35</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Mathieu Besançon – Better Strong Branching Usage with a Stochastic Branching Model</a>
+		</p>
+		<p class="hideme">
+		  Strong Branching (SB) is a cornerstone of all modern branching
+		  rules used in the Branch-and-Bound (BnB) algorithm, which is at the center of
+		  Mixed-Integer Programming solvers. In its full form, SB evaluates all variables
+		  to branch on and then selects the one producing the best relaxation, leading to
+		  small trees, but high runtimes. State-of-the-art branching rules therefore use
+		  SB with empirical working limits to achieve both small enough trees and short
+		  run times. In this work, we define a stochastic tree model of the BnB algorithm
+		  where dual gains follow a given probability distribution. This model allows us
+		  to relate expected dual gains to tree sizes and explicitly compare the cost of
+		  sampling a SB candidate with the reward in expected tree size reduction. We
+		  then leverage the insight from the abstract model to design a new stopping
+		  criterion for SB which dynamically continues or interrupts SB, and show that it 
+		  improves solving performance in both time and nodes over MIPLIB.
+		</p>
+	    </td></tr>
+            <tr><td class="time">2:35 - 3:10</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Yatharth Dubey – Branch-and-bound with predictions for variable selection</a>
+		</p>
+		<p class="hideme">
+		  In this paper, we are interested in solving a binary integer program using the branch-and-bound method. The execution of the branch-and-bound method varies significantly with the choice of variable selection rule (sometimes called branching rule). To solve a given MILP with the smallest branch-and-bound tree possible, one would want to branch on a variable such that the two resulting subproblems are as "easy" as possible. Informally, given access to a function <MATH>&theta;(S)</MATH> that gives the size of the smallest branch-and-bound tree solving subproblem <MATH>S</MATH>, we can construct a smallest branch-and-bound tree by branching on the variable <MATH>j</MATH> resulting in subproblems <MATH>S<sub>x_j = 0</sub>, S<sub>x_j = 1</sub></MATH> such that <MATH>&theta;(S<sub>x_j = 0</sub>) + &theta;(S<sub>x_j = 1</sub>)</MATH> is minimum over all choices of <MATH>j</MATH>. Of course, computing all of the necessary values of <MATH>&theta;(S)</MATH> is no easier than solving the integer program itself. This motivates the need for a good estimator <MATH>&theta;&#770;</MATH> for <MATH>&theta;</MATH>, which has been an implicit goal of several previous studies, including those employing machine learning techniques for variable selection. Indeed, one can view full strong branching as branching according to an estimator <MATH>&theta;&#770;</MATH> that is a (monotone) function of only the additive integrality gap. Our study reflects the goals of the rapidly developing research on "algorithms with predictions", which focuses on how to leverage constantly advancing machine learning tools for improved algorithms. In particular, the goal of this work is to quantify the impact of the quality of the estimate <MATH>&sigma;&#770;</MATH> when used for variable selection and to get a better understanding of what a good estimate looks like. We provide some theoretical results and discussion, as well as a computational study of strong branching under this context, and suggest some potential estimates that may result in smaller branch-and-bound trees.
+		  <a href="slides/Yatharth_Dubey.pdf">(slides)</a>		  
+		</p>
+	    </td></tr>
+            <tr><td class="time">3:10 - 3:30</td><td><p>Break</p></td></tr>
+            <tr><td class="time">3:30 - 4:15</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Juan Pablo Vielma – MathOpt: Solver independent modeling and execution independent solving in Google's OR-Tools</a>
+		</p>
+		<p class="hideme">	  
+		  OR-Tools MathOpt is a software library for algebraic modeling of mathematical optimization problems. MathOpt supports solver-independent modeling of a wide range of optimization problems including continuous and mixed-integer problems with linear or quadratic objectives and various classes of constraints (including linear, quadratic, second order cone and some specialized constraints). In this talk, we describe various aspects of MathOpt’s design and implementation including multi-language support (including C++ and Python), support for solver-independent callbacks and incremental solves, and remote solves using Google’s Operations Research API service.
+		</p>
+	    </td></tr>
+            <tr><td class="time">4:15 - 4:50</td><td><p>Business Meeting</p></td></tr>
+	  </table>
+
+	  <h3><a title="Show Thursday schedule" href="#" onclick="toggleSchedule(this);return false;">Thursday, June 6</a></h3>
+          <table class="hideme">
+            <tr><td class="time">9:30 - 10:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Bento Natura – A strongly polynomial algorithm for linear programs with at most two nonzero entries per row or column</a>
+		</p>
+		<p class="hideme">
+		  We give a strongly polynomial algorithm for minimum cost generalized flow, and hence for optimizing any linear program with at most two non-zero entries per row, or at most two non-zero entries per column. Primal and dual feasibility were shown by Megiddo (SICOMP ’83) and Végh (MOR ’17) respectively. Our result can be viewed as progress towards understanding whether all linear programs can be solved in strongly polynomial time, also referred to as Smale’s 9th problem. Our approach is based on the recent primal- dual interior point method (IPM) due to Allamigeon, Dadush, Loho, Natura and Végh (FOCS ’22). The number of iterations needed by the IPM is bounded, up to a polynomial factor in the number of inequalities, by the straight line complexity of the central path. Roughly speaking, this is the minimum number of pieces of any piecewise linear curve that multiplicatively approximates the central path. As our main contribution, we show that the straight line complexity of any minimum cost generalized flow instance is polynomial in the number of arcs and vertices. By applying a reduction of Hochbaum (ORL ’04), the same bound applies to any linear program with at most two non-zeros per column or per row. To be able to run the IPM, one requires a suitable initial point. For this purpose, we develop a novel multistage approach, where each stage can be solved in strongly polynomial time given the result of the previous stage. Beyond this, substantial work is needed to ensure that the bit complexity of each iterate remains bounded during the execution of the algorithm. For this purpose, we show that one can maintain a representation of the iterates as a low complexity convex combination of vertices. Our approach is black-box and can be applied to any log-barrier path following method. Joint work with Daniel Dadush, Zhuan Khye Koh, Neil Olver, and László Végh.
+		  <a href="slides/Bento_Natura.pdf">(slides)</a>
+		</p>
+	    </td></tr>
+            <tr><td class="time">10:20 - 10:45</td><td><p>Break</p></td></tr>
+            <tr><td class="time">10:45 - 11:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Maryam Daryalal – Reasoning in Description Logic: A Mixed-integer Programming Framework</a>
+		</p>
+		<p class="hideme">
+		  Description Logics (DL) are formal languages for knowledge representation, enabling structured ontology creation and logical reasoning. This talk presents an optimization-based framework for enhancing reasoning in DL by employing mixed-integer programming methods. The framework exploits a novel approach of mapping DL axioms to a set of inequalities, enabling the use of advanced optimization techniques. The integration of column generation and branch-and-price algorithms addresses the complexity of the resulting inequality system, offering a scalable solution for handling large ontological datasets. In a preliminary set of experiments, the framework's performance is evidenced by its application to the ontology of the Canadian Parliament, where it outperforms traditional reasoning methods. This work could mark a significant advancement for the Semantic Web community by merging ontology reasoning with sophisticated optimization methods to meet the challenges of semantic data processing.
+		  <a href="slides/Maryam_Daryalal.pdf">(slides)</a>
+		</p>
+	    </td></tr>
+            <tr><td class="time">11:20</td><td><p>Concluding Remarks</p></td></tr>
+	  </table>
+
+	  <div class="col gallery">
+            <a href="photos/group_conference.JPG">
+              <img src="photos/group_conference.JPG" alt="MIP 2024 conference" width="100%">
+      	    </a>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mainstyle1">
+    <div class="container" >
+      <h2>Computational competition</h2>
+      <div class="row">
+        <p>The 2024 MIP Workshop will host a competition for research teams to showcase their practical, computational prowess.</p>
+
+	<p>All details can be found <a href="https://github.com/dominiqs81/MIPcc24">here</a>.</p>
+
+	<p>
+	  <div class="row">
+	    The winners of the computational competition are Yongzheng Dai and Chen Chen with their work titled "Two-column probing for MIPs".
+            <div class="five columns">
+	      <img src="photos/computation-winner.jpg" alt="compwinner" width="100%">
+            </div>
+            <div class="five columns">
+	      <img src="photos/diploma-computational-winner.png" alt="compwinner" width="100%">
+            </div>
+	    <br>
+	  </div>
+	</p>
+
+	<p>
+	  <div class="row">
+	    The work "Implied integer detection using totally unimodular submatrices" by Rolf van der Hulst has received an honorable mention.
+            <div class="five columns">
+	      <img src="photos/computation-runnerup.jpg" alt="comphonor" width="80%">
+            </div>
+            <div class="five columns">
+	      <img src="photos/diploma-computational-honor.png" alt="comphonor" width="100%">
+            </div>
+	  </div>
+	</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle2">
+    <div class="container">
+      <h2>Summer School</h2>
+      <div class="row">
+        <div class="twelve columns">
+	  <p>We are excited to announce that MIP2024 will have a summer school on June 2. The summer school will be given
+	  <ul>
+	    <li><a href="https://sites.google.com/site/robertdhildebrand/">Robert Hildebrand</a> (Virginia Tech)</li>
+	    <li><a href="https://cse.umn.edu/isye/jean-philippe-jp-richard">Jean-Philippe Richard</a> (Minnesota)</li>
+	    <li><a href="https://www2.isye.gatech.edu/~sdey30/">Santanu S. Dey</a> (Georgia Tech)</li>
+	  </ul>
+	  More information about the summer school can be found <a href="summerschool.html">here</a>.</p>
+	</div>
+
+      	<div class="col gallery">
+          <a href="photos/summerschool.jpg">
+            <img src="photos/summerschool.jpg" alt="MIP 2024 summer school" width="100%">
+      	  </a>
+	</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle1">
+    <div class="container">
+      <h2>Organization</h2>
+      <div class="row">
+        <div class="four columns">
+          <h3>MIP Program Committee</h3>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/martina-fischetti-51818159/?originalSubdomain=es">Martina Fischetti</a></li>
+            <li><a href="https://www.win.tue.nl/~chojny/">Christopher Hojny</a></li>
+            <li><a href="https://akazachk.github.io/">Aleksandr M. Kazachkov</a></li>
+            <li><a href="https://coral.ise.lehigh.edu/aida/">Aida Khajavirad</a></li>
+            <li><a href="https://sites.google.com/site/josephspaat/">Joseph Paat (Chair)</a></li>
+          </ul>
+        </div>
+        <div class="four columns">
+          <h3>Local Organization</h3>
+          <ul>
+            <li><a href="https://www.ms.uky.edu/~yzh392/">Yuan Zhou</a></li>
+          </ul>
+        </div>
+        <div class="four columns">
+          <h3>Competition Committee</h3>
+          <ul>
+            <li><a href="https://www.dei.unipd.it/~salvagni/">Domenico Salvagnin</a></li>
+            <li><a href="https://coral.ise.lehigh.edu/bsuresh/">Suresh Bolusani</a></li>
+            <li><a href="https://scholar.google.com/citations?user=JP1tBRAAAAAJ&hl=en">Pierre Bonami</a></li>
+            <li><a href="https://www.lix.polytechnique.fr/~dambrosio/">Claudia D'Ambrosio</a></li>
+            <li><a href="https://www.zib.de/hendel/">Gregor Hendel</a></li>
+            <li><a href="https://sites.google.com/site/josephspaat/">Joseph Paat</a></li>
+            <li><a href="https://www.krooonal.com/about/">Krunal Patel</a></li>
+          </ul>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle2">
+    <div class="container">
+      <h2>Sponsors</h2>
+      <div class="row">
+        <div class="four columns">
+	  <a href="https://www.nsf.gov"><img src="images/academic_sponsors/nsf.jpg" alt="NSF" width="40%"></a>
+        </div>
+        <div class="four columns">
+	  <a href="https://www.uky.edu/"><img src="images/academic_sponsors/uky.png" alt="Kentucky" width="90%"></a>
+        </div>
+        <div class="four columns">
+	  <a href="https://www2.lehigh.edu/"><img src="images/academic_sponsors/lehigh.jpg" alt="Lehigh" width="100%"></a>
+        </div>        
+      </div><br>
+      <div class="row">
+        <div class="four columns">
+	  <a href="https://www.usc.edu/"><img src="images/academic_sponsors/usc.png" alt="USC" width="100%"></a>
+        </div>
+        <div class="four columns">
+	  <a href="https://www.imse.iastate.edu/"><img src="images/academic_sponsors/ISU_IMSE_stack_center_red.svg" alt="Iowa" width="100%"></a>
+        </div>
+        <div class="four columns">
+	  <a href="https://engineering.tamu.edu/industrial/index.html"><img src="images/academic_sponsors/tamu.png" alt="Texas A&M University" width="100%"></a>
+        </div>        
+      </div><br>
+      <div class="row">
+        <div class="four columns">
+	  <a href="https://www.ise.ufl.edu/"><img src="images/academic_sponsors/florida.png" alt="University of Florida" width="100%"></a>
+        </div>        
+        <div class="four columns">
+	  <a href="https://www.ise.vt.edu/"><img src="images/academic_sponsors/virginiatech.svg" alt="Virginia Tech" width="100%"></a>
+        </div>        
+      </div><br><br><br>
+      <div class="row">
+        <div class="four columns">
+	  <a href="https://www.sas.com/en_us/home.html"><img src="images/industrial_sponsors/sas-logo-blue.jpg" alt="SAS" width="60%"></a>
+        </div>        
+        <div class="four columns">
+	  <a href="https://about.google/"><img src="images/industrial_sponsors/GoogleLogo.png" alt="Google" width="80%"></a>
+        </div>        
+        <div class="four columns">
+	  <a href="https://shanshu.ai/"><img src="images/industrial_sponsors/copt.png" alt="Cardinal" width="80%"></a>
+        </div>        
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="four columns">
+	  <a href="https://www.fico.com/"><img src="images/industrial_sponsors/fico.svg" alt="FICO" width="60%"></a>
+        </div>        
+	<div class="four columns">
+	  <a href="https://www.gurobi.com/"><img src="images/industrial_sponsors/gurobi.svg" alt="Gurobi" width="100%"></a>
+        </div>        
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="four columns">
+	  <a href="https://www.mosek.com/"><img src="images/industrial_sponsors/mosek.png" alt="Mosek" width="100%"></a>
+        </div>        
+        <div class="four columns">
+	  <a href="https://minlp.com/home"><img src="images/industrial_sponsors/optimizationfirm.png" alt="Optimization Firm" width="90%"></a>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+
+
+  <div class="mainstyle1">
+    <div class="container">
+      <h2>Credits</h2>
+      <p>Logo-Design by ©<a href="https://www.jubs-art.com">Julia Silbermann</a> (Font-Credits: Cornerstone, by Zac Freeland).
+      Website hosted at <a href="https://pages.github.com">GitHub Pages</a>, layout based on <a href="http://getskeleton.com">skeleton</a> using <a href="https://github.com/impallari/Raleway">Raleway</a> font</p>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+    function toggleSchedule(el) {
+      el.parentElement.nextElementSibling.classList.toggle("hideme");
+    }
+
+    function toggleAbstract(el) {
+      el.parentElement.nextElementSibling.classList.toggle("hideme");
+    }
+  </script>
+</body>
+</html>
